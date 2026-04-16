@@ -1,0 +1,53 @@
+DATABASE: prulariacom
+Gegenereerd op: 9 maart 2026
+
+TABELLEN (33):
+==============
+
+1.  actiecodes - Actiecodes/promoties
+2.  adressen - Adresgegevens
+3.  artikelcategorieen - Koppeltabel artikelen-categorieën
+4.  artikelen - Productgegevens
+5.  artikelleveranciersinfolijnen - Leveranciersinformatie per artikel
+6.  bestellijnen - Orderregels
+7.  bestellingen - Bestellingen/orders
+8.  bestellingsstatussen - Statussen van bestellingen
+9.  betaalwijzes - Betaalmethoden
+10. categorieen - Productcategorieën
+11. chatgesprekken - Chatgesprekken
+12. chatgespreklijnen - Chatberichten
+13. contactpersonen - Contactpersonen
+14. eventwachtrijartikelen - Wachtrij voor artikel events
+15. gebruikersaccounts - Gebruikersaccounts
+16. inkomendeleveringen - Inkomende leveringen van leveranciers
+17. inkomendeleveringslijnen - Regels van inkomende leveringen
+18. klanten - Klantgegevens
+19. klantenreviews - Klantbeoordelingen
+20. leveranciers - Leveranciers
+21. magazijnplaatsen - Magazijnlocaties
+22. natuurlijkepersonen - Natuurlijke personen
+23. personeelsleden - Personeelsgegevens
+24. personeelslidaccounts - Accounts van personeelsleden
+25. personeelslidsecuritygroepen - Koppeltabel personeel-securitygroepen
+26. plaatsen - Postcodes/gemeenten
+27. rechtspersonen - Rechtspersonen/bedrijven
+28. securitygroepen - Beveiligingsgroepen/rollen
+29. toonpersoneelsledenmetsecuritygroepen - View voor personeel met groepen
+30. uitgaandeleveringen - Uitgaande leveringen naar klanten
+31. uitgaandeleveringsstatussen - Statussen van uitgaande leveringen
+32. veelgesteldevragenartikels - FAQ's over artikelen
+33. wishlistitems - Verlanglijst items
+
+STORED PROCEDURES (5):
+=====================
+
+1. createNieuweBestellingen - Creëert nieuwe testbestellingen
+2. createNieuweInkomendeLeveringen1 - Creëert eerste set inkomende leveringen
+3. createNieuweInkomendeLeveringen2 - Creëert tweede set inkomende leveringen
+4. InkomendeLeveringElkeDagProcedure - Dagelijkse voorraadverwerking
+
+FUNCTIES (2):
+=============
+
+1. geefMagazijnPlaats - Bepaalt magazijnplaats voor artikel
+2. genereerEan - Genereert EAN barcode voor artikel

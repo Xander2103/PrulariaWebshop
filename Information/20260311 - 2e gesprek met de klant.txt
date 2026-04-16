@@ -1,0 +1,407 @@
+﻿Het doel van het 2e gesprek is drie concrete zaken:
+1. Bevestigen wat verplicht is voor de eerste release
+2. Onzekerheden en interpretaties verduidelijken
+3. Nice-to-have functionaliteit scheiden van core functionaliteit
+
+
+
+
+
+
+________________
+
+
+1. Afbakening van de eerste versie (MVP)
+Wat is een MVP
+Een Minimum Viable Product (MVP) is de eerste werkende versie van de webshop waarmee klanten effectief producten kunnen zoeken, bestellen en betalen.
+Een duidelijke MVP voorkomt dat een project van drie weken te complex wordt.
+Vraag aan de klant
+Welke functionaliteiten zijn absoluut noodzakelijk bij de eerste oplevering?
+Voorstel om dit expliciet te laten bevestigen.
+Mogelijke MVP-functionaliteiten
+Functionaliteit
+	Nodig voor MVP
+	
+
+	Productcatalogus
+	Ja
+	basis webshop
+	Productdetailpagina
+	Ja
+	informatie + foto
+	Zoekfunctie
+	Ja
+	eventueel zonder fuzzy search
+	Winkelmand
+	Ja
+	essentieel
+	Checkout
+	Ja
+	inclusief betaling / beperken tot bv enkel Bancontact
+	Accountregistratie
+	Ja
+	voor bestellingen
+	Voorraadweergave
+	Ja
+	eenvoudige versie /zonder ‘blinker : dringend’
+	Wishlist
+	Optioneel
+	kan later
+	Reviews
+	Optioneel
+	kan later
+	Personalisatie
+	Optioneel
+	complex
+	Aanpasbare kleuren
+	Optioneel
+	UX feature
+	 
+Vraag
+Welke onderdelen moeten absoluut aanwezig zijn bij de eerste oplevering?
+
+
+________________
+
+
+Vragen of het inderdaad ook voor mobiel moet? 
+Of vragen hoe hij verwacht dat zijn klanten gaan bestellen?
+Is Mobile First iets wat ik in deze fase moet aankaarten?  Of gaat dat de aanmaak in eerste fase zo bemoeilijken dat we hiermee beter wachten tot een volgend gesprek?  
+Liever een werkende site voor desktop, dan een half- of niet-werkende shop die mobile safe is?
+
+
+
+
+
+
+
+
+
+
+
+
+2. Productcatalogus en structuur
+Wat dit onderdeel beschrijft
+De manier waarop producten georganiseerd worden in de webshop.
+Dit bepaalt de database-structuur en navigatie.
+Vragen
+1. Hoeveel producten verwacht de klant?
+   * ±10
+   * ±100
+   * ±1000
+2. Hoeveel categorieën zijn er?
+3. Zijn er subcategorieën nodig?
+Voorbeeld:
+Tuinmateriaal
+   ├─ Emmers
+   ├─ Gieters
+   └─ Tuinbakken
+4. Kan een product in meerdere categorieën zitten?
+5. Hebben producten varianten?
+Voorbeeld:
+Emmer 10L
+- rood
+- blauw
+- groen
+Belangrijk
+Dit bepaalt of we werken met:
+* productvarianten
+* meerdere productrecords
+ 
+ 
+ 
+3. Zoekfunctie
+Wat de klant vraagt
+De klant wil een fuzzy search. / nemen we voorlopig nog niet op wegens te complex/ wordt achteraf, indien mogelijk binnen de 2 sprints, besproken met de klant.
+Dat betekent:
+* de zoekfunctie vindt resultaten ook bij typefouten
+Voorbeeld
+emmre → emmer
+emr → emmer
+Vragen
+Moet de zoekfunctie zoeken op:
+* productnaam
+* categorie
+* beschrijving
+Belangrijk
+Een fuzzy search met suggesties kan technisch complex zijn.
+Eventueel kan dit fase 2 worden.
+________________
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+4. Personalisatie ("Hot Items")
+Wat dit systeem doet
+De homepage toont producten op basis van koopgedrag.
+Voorbeeld:
+Een gebruiker koopt vaak:
+emmers
+Dan toont de site automatisch:
+nieuwe emmers
+tuinaccessoires
+Vragen
+1.      Moet de balk bij elke login veranderen?
+2.      Want het kan zijn dat de klant sporadisch eens iets uitzonderlijks bestelt wat niet tot zijn meest gekochte items behoort
+We nemen deze functionaliteit voorlopig nog niet op in onze eerste presentatie van de site !
+Is meegegeven aan de klant
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 5. Toegankelijkheid (Accessibility)
+De klant wil dat de site toegankelijk is voor:
+* kleurenblinden
+* mensen met dyslexie
+Vragen
+1. Moet de kleurinstelling automatisch onthouden worden? (werd eerder al beantwoord : JA)
+Mogelijkheden:
+   * cookie
+   * gebruikersprofiel
+1. Moeten deze instellingen ook werken zonder account?
+2. Is er een voorkeur voor lettertypes?   
+Bijvoorbeeld:
+* OpenDyslexic
+* Arial
+* Verdana
+
+
+Deze om een eerste aanzet te hebben, speciale lettertypes en kleuren worden nadien toegevoegd
+________________
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 6. Voorraadbeheer
+Beschrijving
+De webshop toont voorraad aan klanten.
+Vraag
+Waar komt de voorraad vandaan?
+* wordt deze manueel ingegeven
+* of gekoppeld aan een extern systeem
+Extra vraag
+Moet voorraad automatisch verminderen bij:
+* bestelling (betekent dat een product in het winkelwagentje de stock meteen op 0 kan zetten)
+* betaling (betekent dat een product moet afgerekend zijn om uit de stock te verdwijnen met het gevaar dat er een bestelling plaatsvindt van een product dat op dat moment in 2 winkelwagentjes staat, maar waarvan er maar 1 meer op voorraad is)
+________________
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+7. Reviewsysteem
+De klant wil reviews.
+Vragen
+1. Mogen alle klanten reviews schrijven?
+Of alleen klanten die het product kochten?
+2. Moet er een moderatiesysteem zijn?
+3. Moet een review bestaan uit:
+* alleen sterren
+* sterren + tekst
+________________
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+8. Wishlist
+Beschrijving
+Klanten kunnen producten bewaren in een lijst.
+Vraag
+Moet de wishlist:
+* publiek gedeeld worden via link
+* of alleen privé
+Extra vraag
+Moet de wishlist verlopen na bepaalde tijd?
+________________
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 9. Betalingsmethoden
+De klant noemt:
+* QR
+* Bancontact
+* Creditcard
+Belangrijke vraag
+Welke betalingsprovider wil de klant gebruiken?  We voorzien er 1 bij de MVP, ook  indien meerdere gewenst
+Bijvoorbeeld:
+* Mollie
+* Stripe
+* PayPal
+Dit is cruciaal omdat:
+* elke provider andere integratie heeft
+* sommige extra kosten hebben
+________________
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 10. Facturen
+Vraag
+Moet de webshop automatisch facturen genereren?
+Zo ja:
+* PDF
+* downloadbaar via account
+Extra vraag
+Moeten facturen ook:
+* automatisch gemaild worden
+* BTW apart tonen
+________________
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+11. Retourbeleid
+De klant vermeldt een retourformulier.
+Vragen
+1. Moet retour automatisch:
+* goedgekeurd worden
+* of eerst beoordeeld
+2. Moet een retour reden verplicht bevatten?
+________________
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+12. Admin-gedeelte
+Nog niet besproken maar essentieel. -  ZIT BIJ AANKOOP EN VERKOOP –  RARE SITUATIE WANT (VERNOMEN VAN COLLEGA VAN VERKOOP) CHAT MET DE KLANT EN TERUGNAMES ZITTEN BIJ AANKOOP EN NIET BIJ VERKOOP;
+Vraag
+Moet de klant een beheeromgeving (admin panel) hebben voor:
+* producten toevoegen
+* voorraad aanpassen
+* bestellingen bekijken
+* retouren behandelen
+________________
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+13. Juridische elementen
+Elke webshop heeft wettelijk nodig:
+* privacybeleid
+* cookiebeleid
+* algemene voorwaarden
+* retourbeleid
+Vraag
+Levert de klant deze teksten aan?
+Of moeten wij ze voorzien?
+
+
+Deze wil ik mee opnemen in de eerste fase omdat ze weinig werk vragen vanwege vaak standaard-teksten en meteen al in orde zijn voor het volledige project.
+________________
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 14. Hosting en technische omgeving
+Vragen
+1. Heeft de klant reeds:
+* domeinnaam
+* hosting
+2. Verwachte bezoekers per maand?
+Dit beïnvloedt:
+* serverkeuze
+* database
+
+
+Ik weet wel dat alles hiervan is aangeleverd, maar ik denk dat we, in functie van de oefening, dit toch ter sprake moeten brengen bij de klant.
+________________
+
+
+ 
+  15. Planning en oplevering
+Vraag
+Wat verwacht de klant als eindresultaat?
+Mogelijkheden:
+1. Prototype
+2. Werkende webshop zonder betalingen
+3. Volledig werkende webshop
+________________
+
+
+ 
+ 
+ Samenvatting voor het gesprek
+Het doel van het volgende gesprek is:
+1. MVP bepalen
+2. Functionaliteiten prioriteren
+3. Technische randvoorwaarden vastleggen
+4. Onzekerheden in requirements oplossen
+________________
+
+
+✅ Tip voor je Scrum-project (heel belangrijk voor je evaluatie):
+Tijdens het gesprek moet je expliciet vragen:
+* Wat is MUST / Wat moét je kunnen zien?
+* Wat is SHOULD / Wat zou je nog willen zien?
+* Wat is COULD / Wat zou je fijn vinden als het ook nog te zien was?
+Dit heet MoSCoW-prioritering en wordt vaak verwacht bij Scrum-projecten.
+________________

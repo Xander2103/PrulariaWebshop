@@ -1,0 +1,53 @@
+﻿10/03/2026 – klantcontact BB/NVH
+
+
+1. Toegankelijkheid & User Experience (UX)
+* Inclusief Design: De website moet toegankelijk zijn voor iedereen, inclusief gebruikers met dyslexie en kleurenblindheid.
+* Aanpasbaar Kleurenpalet: Gebruikers kunnen op de hoofdpagina een kleurenschema kiezen dat wordt opgeslagen in hun profiel. Opties zijn onder andere:
+   * Default (Standaardinstelling).
+   * High Contrast (Zwart-wit).
+   * Extra Readable (Geoptimaliseerd voor leesbaarheid/dyslexie).
+   * Pastel Pink.
+* Zoekfunctie: Fuzzy search in searchbar om suggesties te maken voor je product/categorie. 
+* Navigatie: Een menu aan de linkerkant met hoofd- en subcategorieën die uitklapbaar zijn. Indien een klant ingelogd is, klappen relevante categorieën automatisch uit op basis van aankoophistorie.
+2. Homepage & Personalisatie
+* Hot Items (Push Marketing): Bovenaan de pagina verschijnt een balk met gepersonaliseerde aanbevelingen. Bijvoorbeeld: een gebruiker die vaak emmers koopt, ziet hier direct nieuwe emmers of gerelateerde tuinartikelen.
+* Productweergave (Tegels):
+   * Producten worden getoond als relatief grote tegels/iconen (geen kleine lijstweergave).
+   * Inhoud tegel: Foto, korte tekst, prijs (altijd inclusief BTW) en een winkelmand-icoon.
+   * Interactie: Hoveren over de naam zorgt voor extra visualisatie. Een klik op de knop voegt het product direct toe; een klik op de tegel zelf opent de detailpagina.
+3. Zoekfunctie & Filters
+* Fuzzy Search: Een gebruiksvriendelijke zoekbalk die met minimale input (weinig termen) de juiste resultaten vindt.
+* Efficiëntie: Het doel is om het aantal kliks tot aan de aankoop te minimaliseren.
+* Geavanceerde Filters: Filteren op kleur, volume en andere specificaties.
+* Toekomstvisie: Een zoekvraag op basis van behoefte (bijv. "container voor 20 liter water") die automatisch een passende emmer als resultaat geeft. OUT OF SCOPE
+4. Productinformatie & Voorraad
+* Detailpagina: Bevat uitgebreide informatie en een fotocarrousel met verschillende varianten (bijv. kleuren).
+* Voorraadindicatie:
+   * Bij een voorraad < 6 stuks: Een opvallende rode "paniekmelding" (bijv. "Slechts 2 meer in stock!").
+   * Bij een voorraad ≥ 6 stuks: De exacte voorraad wordt neutraal getoond.
+* Reviews: Ingelogde klanten die het product eerder kochten, kunnen een sterrenrating (1 tot 5 sterren) achterlaten.
+5. Winkelmand & Wishlist
+* Winkelmand:
+   * Eenvoudig items toevoegen via de producttegel.
+   * Het winkelmandje is niet constant zichtbaar, enkel het totaalbedrag/aantal items wordt getoond.
+   * In het mandje kunnen aantallen worden gewijzigd.
+* Wishlist:
+   * Producten kunnen via een hartje aan de wishlist worden toegevoegd.
+   * Er is één wishlist per klant.
+   * Deelbaarheid: De wishlist werkt via een unieke URL (GET-methode), zodat deze gedeeld kan worden als cadeaulijst met vrienden of collega's.
+6. Account & Registratie
+* Flow: Registratie is mogelijk via de homepage, bij het inloggen of tijdens het afrekenen (vlak voor de betaling).
+* Conversie-optimalisatie: Gebruik van de tekst "U bent één wachtwoord verwijderd van een account" om registratie tijdens checkout te stimuleren.
+* Data: Gescheiden velden voor leveringsadres en facturatieadres.
+* Privacy: Klanten kunnen hun account deactiveren. De data blijft echter in de database behouden (geen volledige verwijdering).
+* Dashboard: Ingelogde klanten hebben toegang tot hun bestelgeschiedenis, facturen en kunnen retour aanvragen indienen via een formulier.
+7. Checkout & Betaling
+* Snelheid: Het proces moet vlot en efficiënt verlopen. Voor ingelogde klanten zijn gegevens reeds ingevuld.
+* Actiecodes: Mogelijkheid om kortingscodes toe te passen (bijv. 15% op tuinmateriaal). Het systeem kan ook suggesties doen voor andere categorieën om cross-selling te bevorderen.
+* Betaalmethoden: Betaling via QR-code, Bancontact en Creditcard.
+* Bevestiging: Na betaling volgt een bevestigingsscherm, waarna de gebruiker terugkeert naar de homepage (die dan weer geactualiseerd is met nieuwe "Hot Items").
+8. Footer & Overige
+* Contact: Link naar een contactformulier.
+* Over ons: Informatie over de webshop.
+* Header: Rechtsboven staat een icoon van een mannetje met de tekst "Login/Registreren" of de naam van de ingelogde gebruiker.

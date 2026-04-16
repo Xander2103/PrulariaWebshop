@@ -1,0 +1,105 @@
+/* ========== BESTELLINGEN OVERZICHT STYLING ========== */
+
+.bestellingen-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.bestellingen-container h1 {
+    color: var(--kleur-oppervlak-secundair);
+    font-weight: bold;
+}
+
+.bestellingen-container .table {
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bestellingen-container .table thead {
+    background-color: var(--kleur-oppervlak);
+}
+
+.bestellingen-container .table thead th {
+    color: var(--kleur-tekst);
+    font-weight: 600;
+    border-bottom: 2px solid var(--kleur-oppervlak-secundair);
+}
+
+.bestellingen-container .table tbody tr {
+    transition: background-color 0.2s;
+}
+
+.bestellingen-container .table tbody tr:hover {
+    background-color: rgba(171, 215, 168, 0.1);
+}
+
+.bestellingen-container .btn-outline-primary {
+    color: var(--kleur-oppervlak-secundair);
+    border-color: var(--kleur-oppervlak-secundair);
+}
+
+.bestellingen-container .btn-outline-primary:hover {
+    background-color: var(--kleur-oppervlak-secundair);
+    border-color: var(--kleur-oppervlak-secundair);
+    color: white;
+}
+
+.bestellingen-container .btn-primary {
+    background-color: var(--kleur-oppervlak-secundair);
+    border-color: var(--kleur-oppervlak-secundair);
+}
+
+.bestellingen-container .btn-primary:hover {
+    background-color: var(--kleur-oppervlak-hover);
+    border-color: var(--kleur-oppervlak-hover);
+}
+
+.bestellingen-container .btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.bestellingen-container .btn-outline-secondary:hover {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: white;
+}
+
+/* Details collapse */
+.bestellingen-container .collapse td {
+    padding: 0 !important;
+}
+
+.bestellingen-container .collapse .p-3 {
+    background-color: #f8f9fa;
+    border-left: 4px solid var(--kleur-oppervlak-secundair);
+}
+
+.bestellingen-container .table-sm {
+    font-size: 0.9rem;
+}
+
+/* Responsive aanpassingen */
+@media (max-width: 768px) {
+    .bestellingen-container .table {
+        font-size: 0.875rem;
+    }
+    
+    .bestellingen-container .d-flex {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 1rem;
+    }
+    
+    .bestellingen-container .table thead {
+        font-size: 0.8rem;
+    }
+    
+    .bestellingen-container .btn-sm {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+    }
+}

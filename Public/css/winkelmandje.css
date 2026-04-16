@@ -1,0 +1,197 @@
+.winkelmand-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+}
+
+.winkelmand-title {
+    margin-bottom: 2rem;
+    color: #2F3E2E;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.winkelmand-leeg {
+    background-color: #F7FBF6;
+    border: 1px solid #D5EBD4;
+    border-radius: 14px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.winkelmand-leeg-tekst {
+    margin-bottom: 1rem;
+    color: #567453;
+    font-size: 1.1rem;
+}
+
+.winkelmand-terug-link,
+.winkelmand-afrekenen-knop {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.85rem 1.4rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.winkelmand-terug-link {
+    background-color: #dcecd8;
+    color: #2F3E2E;
+    border: 1px solid #c8dec4;
+}
+
+.winkelmand-terug-link:hover {
+    background-color: #cfe3ca;
+}
+
+.winkelmand-afrekenen-knop {
+    background-color: #89AC86;
+    color: #FFFFFF;
+    border: 1px solid #89AC86;
+}
+
+.winkelmand-afrekenen-knop:hover {
+    background-color: #6f926d;
+    transform: translateY(-1px);
+}
+
+.winkelmand-lijst {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.winkelmand-card {
+    background-color: #F7FBF6;
+    border: 1px solid #D5EBD4;
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.winkelmand-card-inhoud {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.winkelmand-afbeelding-wrapper {
+    flex: 0 0 140px;
+}
+
+.winkelmand-afbeelding {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #D5EBD4;
+    background-color: #FFFFFF;
+    object-fit: cover;
+}
+
+.winkelmand-info {
+    flex: 1;
+}
+
+.winkelmand-product-naam {
+    margin: 0 0 0.9rem;
+    color: #2F3E2E;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.winkelmand-meta {
+    margin: 0 0 0.5rem;
+    color: #567453;
+    line-height: 1.5;
+}
+
+.winkelmand-subtotaal {
+    margin: 0.9rem 0 0;
+    color: #2F3E2E;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.winkelmand-acties {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.winkelmand-verwijder-knop {
+    padding: 0.8rem 1.2rem;
+    background-color: #d9534f;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.winkelmand-verwijder-knop:hover {
+    background-color: #c9302c;
+    transform: translateY(-1px);
+}
+
+.winkelmand-samenvatting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: #EAF4E8;
+    border: 1px solid #D5EBD4;
+    border-radius: 14px;
+    flex-wrap: wrap;
+}
+
+.winkelmand-totaal-box {
+    display: flex;
+    align-items: center;
+}
+
+.winkelmand-totaal-tekst {
+    margin: 0;
+    color: #2F3E2E;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.winkelmand-samenvatting-acties {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .winkelmand-card-inhoud {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .winkelmand-afbeelding-wrapper {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .winkelmand-acties {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .winkelmand-samenvatting {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.25rem;
+    }
+
+    .winkelmand-samenvatting-acties {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}

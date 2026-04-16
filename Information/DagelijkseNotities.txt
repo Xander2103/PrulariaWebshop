@@ -1,0 +1,9 @@
+﻿Checklist:
+* programmeren met hoofdlettergevoeligheid
+* mappenstructuur bepalen
+* vragen aanmaken die aan de klant gesteld moeten worden.
+* de klant bevragen en verslag hiervan maken
+* collega’s inlichten over de wensen van de klant
+* De rechten op de kolommen van de tabellen noteren voor PO - in excel
+* de vragen voor de klant - in excel
+* overzicht tabellen en kolommen om op te filteren - in excel

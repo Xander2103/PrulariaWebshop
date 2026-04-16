@@ -1,0 +1,212 @@
+:root {
+    --kleur-oppervlak: #abd7a8;
+    --kleur-oppervlak-secundair: #89ac86;
+    --kleur-oppervlak-hover: #6f926d;
+    --kleur-achtergrond: #f5fbf4;
+    --kleur-tekst: #1f2a1f;
+    --kleur-link: #1f2a1f;
+    --font-basis: "Segoe UI", "Trebuchet MS", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--kleur-achtergrond);
+    color: var(--kleur-tekst);
+    font-family: var(--font-basis), sans-serif;
+    transition: background-color 0.2s ease, color 0.2s ease, filter 0.2s ease;
+    overflow-x: hidden;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: var(--kleur-link);
+    cursor: pointer;
+}
+
+button {
+    background-color: var(--kleur-oppervlak-secundair);
+    color: white;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border-style: none;
+}
+
+header {
+    background-color: var(--kleur-oppervlak);
+    position: relative;
+    z-index: 1000;
+}
+
+footer,
+.hamburger {
+    background-color: var(--kleur-oppervlak);
+}
+
+/* Zorg ervoor dat dropdown menu boven andere content verschijnt */
+.dropdown-menu {
+    z-index: 1050 !important;
+}
+
+header .container-fluid {
+    overflow: visible !important;
+}
+
+input[type="range"] {
+    accent-color: #89AC86;
+}
+
+svg, .buttonNav {
+    color: #ffffff;
+}
+
+.buttonLogin {
+    background-color: var(--kleur-oppervlak-secundair);
+    border-color: #89AC86;
+}
+
+.registreerHier {
+    color: var(--kleur-oppervlak-secundair);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.homePaging, #resetFilters {
+    background-color: var(--kleur-oppervlak-secundair);
+    color: white;
+}
+
+.registreerHier:hover {
+    color: var(--kleur-oppervlak-hover);
+}
+
+.buttonLogin:hover, .homePaging:hover, #resetFilters:hover {
+    background-color: var(--kleur-oppervlak-hover);
+    color:white;
+}
+
+.buttonNav{
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.buttonNav:hover {
+    background-color: var(--kleur-oppervlak-hover);
+}
+
+#zoekveld {
+    width: 100%;
+}
+
+#maxValue, #minValue {
+    display: inline-block;
+    min-width: 4ch;
+    text-align: right;
+}
+
+.filtersHome label{
+    color:black;
+}
+
+#zoekveld {
+    box-shadow: 0 0 0 0.1rem var(--kleur-oppervlak);
+}
+
+#zoekveld:focus {
+    box-shadow: 0 0 0 0.1rem var(--kleur-oppervlak-hover);
+}
+
+#sorteer {
+    box-shadow: 0 0 0 0.1rem var(--kleur-oppervlak);
+}
+
+button.btn-checkout {
+    background-color: var(--kleur-oppervlak-secundair);
+    /*color: #ffffff;*/
+    border: 2px solid var(--kleur-oppervlak-secundair);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button.btn-checkout:hover {
+    background-color: var(--kleur-oppervlak-hover);
+    border-color: var(--kleur-oppervlak-secundair);
+}
+
+button.btn-checkout,
+a.btn-checkout {
+    display: inline-block;
+    background-color: var(--kleur-oppervlak-secundair);
+    color: #ffffff;
+    border: 2px solid var(--kleur-oppervlak-secundair);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* belangrijk voor <a> */
+    transition: all 0.2s ease;
+}
+
+button.btn-checkout:hover,
+a.btn-checkout:hover {
+    background-color: var(--kleur-oppervlak-hover);
+    border-color: var(--kleur-oppervlak-secundair);
+}
+.wishlist-nav-icon-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-icon-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.buttonNav-badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    min-width: 16px;
+    height: 16px;
+    padding: 0 4px;
+    border-radius: 999px;
+    background-color: #D62828;
+    color: #FFFFFF;
+    font-size: 0.68rem;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.persGegePro {
+background-color: var(--kleur-oppervlak-secundair);
+}
+
+.gegeOpsl {
+border: 1px;
+}
+
+.helphelphelp {
+    color: black;
+}
+
+
+

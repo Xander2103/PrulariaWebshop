@@ -1,0 +1,154 @@
+.categorieen {
+    background-color: #F7FBF6;
+    border: 1px solid #D5EBD4;
+    border-radius: 10px;
+}
+
+.categorieen h2 {
+    color: #567453;
+    font-size: 1.2rem;
+}
+
+.categorieen details {
+    background-color: #FFFFFF;
+    border: 1px solid #DCE9DA;
+    border-radius: 8px;
+    /*verberg als tekst uit kolom komt*/
+    overflow: hidden;
+}
+
+.categorieen summary {
+    background-color: #EEF6EC;
+    color: #2F3E2E;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.categorieen summary:hover {
+    background-color: #E2F0DE;
+}
+
+.categorieen ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.categorieen li {
+    color: #2F3E2E;
+}
+
+/* Toevoegen keuze schermweergave */
+.categorie-lijst {
+    display: grid;
+    gap: 0.45rem;
+}
+
+.categorie-lijst .categorie-lijst {
+    margin-top: 0.55rem;
+    padding-left: 0.85rem;
+    border-left: 1px solid #D5EBD4;
+}
+
+.categorie-item {
+    margin: 0;
+}
+
+.categorieen li details {
+    border: none;
+    background-color: transparent;
+}
+
+.categorie-details {
+    margin: 0;
+}
+
+.categorieen li details summary {
+    background-color: transparent;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.categorie-samenvatting,
+.categorie-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.7rem 0.85rem;
+    border-radius: 6px;
+}
+
+.categorie-link {
+    color: inherit;
+}
+
+.categorie-naam {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.categorie-badge {
+    flex-shrink: 0;
+}
+
+.categorieen li details summary:hover {
+    background-color: #F1F7EF;
+}
+
+.categorieen li details ul li {
+    border-left: 2px solid #D5EBD4;
+    border-radius: 0 6px 6px 0;
+    background-color: #FCFEFC;
+}
+
+/*elke <li> die geen <details> als child heeft*/
+.categorieen li:not(:has(details)) {
+    border-radius: 6px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/*elke <li> die geen <details> als child heeft*/
+.categorieen li:not(:has(details)):hover {
+    background-color: #F1F7EF;
+    transform: translateX(2px);
+}
+
+/*highlight geselecteerde categorie*/
+.categorieen a.actief {
+    background-color: #D5EBD4;
+    color: #2F3E2E;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.categorieen a.actief:hover {
+    background-color: #C4E3C2;
+}
+
+/*highlight geselecteerde categorie*/
+.categorieen a.actief {
+    background-color: #D5EBD4;
+    color: #2F3E2E;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.categorieen a.actief:hover {
+    background-color: #C4E3C2;
+}
+
+/*highlight geselecteerde categorie*/
+.categorieen a.actief {
+    background-color: #D5EBD4;
+    color: #2F3E2E;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.categorieen a.actief:hover {
+    background-color: #C4E3C2;
+}

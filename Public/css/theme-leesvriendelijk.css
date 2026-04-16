@@ -1,0 +1,213 @@
+/* Leesvriendelijk (dyslexic) */
+body.theme-leesvriendelijk {
+    --kleur-oppervlak: #f2dfb6;
+    --kleur-oppervlak-secundair: #d3b979;
+    --kleur-oppervlak-hover: #bd9f5a;
+    --kleur-achtergrond: #fff9ea;
+    --kleur-summary: #f9f1d9;
+    --kleur-tekst: #1f1a0f;
+    --kleur-link: #000000;
+    --font-basis: "OpenDyslexicRegular", "OpenDyslexic", "Comic Sans MS", "Verdana", sans-serif;
+    line-height: 1.65;
+    letter-spacing: 0.03em;
+    word-spacing: 0.08em;
+    /*color: #ffffff;*/
+}
+
+body.theme-leesvriendelijk .categorieen {
+    background-color: var(--kleur-achtergrond);
+    border-color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-leesvriendelijk .categorieen details {
+    border-color: var(--kleur-oppervlak-hover);
+}
+
+body.theme-leesvriendelijk .categorieen summary {
+    background-color: var(--kleur-summary);
+    color: var(--kleur-tekst);
+}
+
+body.theme-leesvriendelijk .categorieen summary:hover {
+    background-color: var(--kleur-summary);
+}
+
+body.theme-leesvriendelijk .categorieen li:not(:has(details)) {
+    background-color:white;
+}
+
+body.theme-leesvriendelijk .categorieen li:not(:has(details)):hover {
+    background-color: var(--kleur-summary);
+}
+
+body.theme-leesvriendelijk .categorieen a.actief {
+    background-color: var(--kleur-oppervlak-hover);
+    color: var(--kleur-tekst);
+}
+
+body.theme-leesvriendelijk .categorieen a.actief:hover {
+    background-color: var(--kleur-oppervlak);
+}
+
+/* Artikelen */
+body.theme-leesvriendelijk .artikel .btn {
+    background-color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-leesvriendelijk .artikel {
+    border-color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-leesvriendelijk .artikel .btn:hover {
+    background-color: var(--kleur-oppervlak-hover);
+}
+
+/* Contact / kaarten */
+body.theme-leesvriendelijk .contact-card {
+    background-color: var(--kleur-oppervlak);
+    border-color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-leesvriendelijk .contact-button {
+    background-color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-leesvriendelijk .contact-button:hover {
+    background-color: var(--kleur-oppervlak-hover);
+}
+
+body.theme-leesvriendelijk .categorieen h2 {
+    color: black;
+}
+
+body.theme-leesvriendelijk .filtersHome {
+    color: black;
+}
+
+body.theme-leesvriendelijk input[type="range"] {
+    accent-color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-leesvriendelijk footer {
+    color: black;
+}
+
+body.theme-leesvriendelijk footer a:hover {
+    text-decoration: underline;
+}
+
+body.theme-leesvriendelijk .registreerHier {
+    color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-leesvriendelijk .registreerHier:hover {
+    color: var(--kleur-oppervlak-hover);
+}
+
+body.theme-leesvriendelijk .winkelmand-meta {
+    color: black;
+}
+body.theme-leesvriendelijk .winkelmand-samenvatting {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+body.theme-leesvriendelijk .winkelmand-terug-link {
+    background-color: var(--kleur-oppervlak);
+    border-color: transparent;
+}
+
+body.theme-leesvriendelijk .winkelmand-terug-link:hover {
+    background-color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-leesvriendelijk .contact-card h2 {
+    background-color: var(--kleur-oppervlak);
+    border-color: var(--kleur-oppervlak-secundair);
+    color: var(--kleur-tekst) !important;
+}
+
+/* Contact / kaarten */
+body.theme-leesvriendelijk .contact-card {
+    background-color: var(--kleur-oppervlak);
+    border-color: var(--kleur-oppervlak-secundair);
+    color: var(--kleur-tekst) !important;
+}
+
+body.theme-leesvriendelijk .info-page {
+    background-color: var(--kleur-achtergrond);
+}
+
+body.theme-leesvriendelijk .info-page__container {
+    background-color: var(--kleur-achtergrond);
+    border-color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-leesvriendelijk .info-page h1 {
+    color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-leesvriendelijk .info-page h2 {
+    color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-leesvriendelijk .info-page h3 {
+    color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-leesvriendelijk .info-page a {
+    color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-leesvriendelijk .info-page a:hover {
+    color: var(--kleur-oppervlak-hover);
+}
+
+body.theme-leesvriendelijk .info-page .ingangsDatum {
+    color: var(--kleur-tekst);
+}
+
+body.theme-leesvriendelijk .winkelmand-leeg-tekst{
+    color: var(--kleur-tekst);
+}
+
+body.theme-leesvriendelijk .buttonLogin{
+    border-color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-leesvriendelijk .categorieen li details ul li {
+    border-left: 2px solid var(--kleur-oppervlak-secundair);
+    border-radius: 0 6px 6px 0;
+    background-color: #FCFEFC;
+}
+
+body.theme-leesvriendelijk .categorie-lijst .categorie-lijst {
+    border-left: 1px solid var(--kleur-oppervlak-secundair);
+}
+
+body.theme-leesvriendelijk #zoekveld {
+    border: 2px solid var(--kleur-oppervlak);
+    outline: none;
+}
+
+body.theme-leesvriendelijk #zoekveld:focus {
+    border: 2px solid var(--kleur-oppervlak-hover);
+    box-shadow: 0 0 0 0.2rem var(--kleur-oppervlak-hover);
+}
+
+body.theme-leesvriendelijk #sorteer {
+    box-shadow: 0 0 0 0.1rem var(--kleur-oppervlak);
+}
+
+body.theme-leesvriendelijk .product-reviews-title {
+    color: var(--kleur-tekst);
+}
+
+body.theme-leesvriendelijk #opVoorraad:checked {
+    background: var(--kleur-oppervlak-secundair);
+    border-color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-leesvriendelijk .form-check-input:checked[type=checkbox] {
+
+}

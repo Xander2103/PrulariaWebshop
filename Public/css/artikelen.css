@@ -1,0 +1,176 @@
+.artikel {
+    background-color: #FFFFFF;
+    border: 1px solid #D5EBD4;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.artikel:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.artikel img.placeholder {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    background-color: #F7FBF6;
+    border-bottom: 1px solid #D5EBD4;
+}
+
+
+.artikel h3 {
+    color: #2F3E2E;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+.artikel .categorie {
+    color: #567453;
+}
+
+
+.artikel .prijs {
+    color: #2F3E2E;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.artikel .btn {
+    background-color: #89AC86;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+
+.artikel .btn:hover {
+    background-color: #6f926d;
+}
+
+.artikel .btn svg {
+    width: 0;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.artikel .btn:hover svg {
+    width: 1.2rem;
+    opacity: 1;
+}
+
+/*'Winkelmand svg icon' op 'toevoegen aan winkelmand'-knop altijd zichtbaar op mobile*/
+@media (max-width: 767.98px) {
+    .artikel .btn svg {
+        width: 1.2rem;
+        opacity: 1;
+    }
+}
+
+/*'Winkelmand svg icon' op 'toevoegen aan winkelmand'-knop altijd zichtbaar op mobile*/
+@media (max-width: 767.98px) {
+    .artikel .btn svg {
+        width: 1.2rem;
+        opacity: 1;
+    }
+}
+
+/* Zorg ervoor dat de link-overlay bovenop de inhoud van het artikel ligt, maar onder de knop --> productdetaillink*/
+.artikel {
+    position: relative;
+}
+
+.artikel-link-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.artikel .btn {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/*'Winkelmand svg icon' op 'toevoegen aan winkelmand'-knop altijd zichtbaar op mobile*/
+@media (max-width: 767.98px) {
+    .artikel .btn svg {
+        width: 1.2rem;
+        opacity: 1;
+    }
+}
+
+.HomeArtikelOverzichtTitel {
+    min-height: 58px;
+}
+
+/* Wishlist hartje styling */
+.artikel-kaart {
+    position: relative;
+}
+
+.wishlist-form-overlay {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 5;
+    margin: 0;
+}
+
+.wishlist-heart-button {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid #222222;
+    background-color: #FFFFFF;
+    color: #222222;
+    font-size: 1.4rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.wishlist-heart-button:hover {
+    transform: scale(1.05);
+}
+
+.wishlist-heart-button.is-active {
+    background-color: #FFFFFF;
+    color: #D62828;
+    border-color: #222222;
+}
+/* Maak checkbox groen als aangevinkt */
+#opVoorraad:checked {
+    background-color: #198754; /* Bootstrap 'success' kleur */
+    border-color: #198754;
+}
+
+/* Optioneel: de check zelf beter zichtbaar maken */
+#opVoorraad:checked::after {
+    content: "✔";
+    color: white;
+    font-size: 0.8em;
+    position: absolute;
+    top: 0;
+    left: 3px;
+}
+/* Algemene slider styling */
+input[type="range"] {
+    width: 250px;              /* Brede slider */
+    height: 20px;             /* Hoogte van de slider */
+    background: #e9ecef;      /* Achtergrondkleur van de rail */
+    border-radius: 5px;      /* Ronde hoeken */
+    outline: none;
+    margin: 0;
+    padding: 0;
+}

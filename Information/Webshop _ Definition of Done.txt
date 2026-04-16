@@ -1,0 +1,129 @@
+﻿1. Codekwaliteit & Architectuur
+* Variabelen en functies volgen de teamstandaard.
+
+* De afgesproken mappenstructuur en architectuur (MVC / Services / DAO) worden gerespecteerd.
+
+* Logica staat in de juiste lagen en bestanden.
+
+* Er is geen onnodige dubbele code geschreven (DRY-principe).
+
+* SQL-queries zijn correct en consistent geschreven met SQL-keywords in hoofdletters (bijv. SELECT, FROM, WHERE).
+
+* Alle debug-code (zoals console.log(), var_dump(), print_r() of testdata) is verwijderd.
+
+________________
+
+
+2. Functionaliteit
+   * Alle acceptatiecriteria van de User Story zijn volledig geïmplementeerd.
+
+   * De nieuwe code breekt geen bestaande functionaliteit (geen regressie).
+
+________________
+
+
+3. Stabiliteit
+      * De applicatie start zonder fouten of warnings.
+
+      * Basis foutafhandeling is aanwezig (bijv. bij lege of foutieve input).
+
+      * De feature werkt correct met echte data uit de database.
+
+________________
+
+
+4. Security & Database
+         * Database-queries gebruiken prepared statements om SQL-injecties te voorkomen.
+
+         * Gevoelige data (zoals wachtwoorden) wordt veilig opgeslagen, bijvoorbeeld met hashing (password_hash).
+
+         * Er wordt geen gevoelige informatie gelogd of onversleuteld opgeslagen.
+
+
+
+
+Team standaard:
+            * camelCase wordt gebruikt voor functies, functienamen en variabelen in het Nederlands.
+
+            * Namespaces en classnamen gebruiken hoofdletters volgens de conventies.
+
+            * Functies hebben een expliciet return type.
+________________
+
+
+Benny:
+               * Alle SQL queries hoofdlettergevoelig?
+               * De afgesproken mappenstructuur wordt gerespecteerd? (ondersteund onderhoudbaar-en schaalbaarheid)
+               * Website werkt op desktop en mobiel?
+               * Duidelijke navigatiestructuur?
+               * Belangrijkste acties (aankoop, registratie, login, wishlist, contact) zijn duidelijk zichtbaar?
+               * Werken alle links?
+               * Checkout proces getest en werkend?
+
+
+
+
+
+
+Xander : 
+
+
+               * Variabele hebben duidelijk en logische namen.
+               * Functies beschrijven duidelijk wat ze doen 
+               * Code is leesbaar voor andere developers
+               * Geen dubbele code? 
+               * Logica staat op de juiste plaats/ juiste structuur gebruikt? 
+               * Debug code is verwijderd
+
+
+
+
+
+
+
+
+Idriss:
+
+
+               * Elke story door minstens een ander teamlid laten checken
+               * Clean code die aan de afspraken voldoet
+               * SQL is case sensitive
+               * Nieuwe code breekt geen bestaande code
+               * Feature werkt in de afgesproken browsers
+               * Product owner krijgt korte showcase om op de hoogte te blijven als een story done is
+               * User input wordt altijd gevalideerd
+               * Duidelijke commit messages (geen fix final etc)
+
+
+
+
+
+
+1. Codekwaliteit & Architectuur (Clean Code)
+[ ] Naamgeving: Variabelen en functies hebben duidelijke, beschrijvende en logische namen.
+camelCase voor functies, functienamen en variabelen in het Nederlands.
+Namespaces gebruiken hoofdletters. 
+[ ] Structuur: De afgesproken mappenstructuur (voor onderhoudbaarheid/schaalbaarheid) is strikt gerespecteerd. Logica staat in de juiste lagen/bestanden.
+[ ] DRY (Don't Repeat Yourself): Er is geen onnodige dubbele code geschreven.
+[ ] SQL Conventies: Alle SQL-queries zijn correct en consequent hoofdlettergevoelig geschreven (bijv. SELECT * FROM table).
+[ ] Opkuis: Alle debug-code (zoals console.log(), var_dump(), print_r(), of hardcoded testdata) is verwijderd.
+[ ] Functieouput typen: meegeven wat de functie returned.
+2. Testen & Functionaliteit
+[ ] Acceptatiecriteria: Aan alle specifieke eisen van de User Story is voldaan.
+[ ] Documentatie: Feature is volledig gedocumenteerd. (input, output, gebruik, etc) in de code
+[ ] Kritieke Flows: Belangrijke processen (zoals checkout, registratie, inloggen, wishlist toevoegen) zijn uitgebreid getest en werken feilloos.
+[ ] Geen Dode Links: Alle (nieuwe) links, knoppen en formulieren op de pagina werken correct.
+[ ] Geen Regressie: De nieuwe code breekt geen bestaande functionaliteit op de website.
+[ ] HTML / CSS validatie: HTML / CSS moet zonder problemen valideren.
+3. UX, UI & Responsiveness
+[ ] Responsiveness: De feature / pagina is getest en werkt goed op zowel mobiel als desktop.
+[ ] Loading times/SEO: SEO en laadsnelheid meten. 
+[ ] Cross-browser: De website werkt en toont correct in de afgesproken webbrowsers (bijv. Chrome, Firefox, Safari, Edge).
+[ ] Navigatie & Zichtbaarheid: De navigatiestructuur is duidelijk. De belangrijkste acties (aankoop, registratie, inloggen, wishlist, contact) springen direct in het oog.
+4. Veiligheid & Database (Aanvullingen)
+[ ] Security: Formulieren en database-inputs zijn beveiligd tegen veelvoorkomende aanvallen (zoals SQL-injecties via prepared statements en XSS).
+[ ] GDPR / Privacy: Er is geen gevoelige data (zoals wachtwoorden) onversleuteld opgeslagen of gelogd.
+5. Proces & Oplevering
+[ ] Versiebeheer: De code is op de juiste branch gepusht en voorzien van heldere commit messages. (Aanvulling)
+[ ] Peer Review: Merge requests altijd samen behandelen
+[ ] Demo / Showcase: De feature is kort gedemonstreerd aan de Product Owner ter goedkeuring.

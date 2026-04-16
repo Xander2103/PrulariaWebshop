@@ -1,0 +1,43 @@
+# Composer dependencies
+/vendor/
+
+# Node modules (frontend)
+node_modules/
+
+# Logs
+*.log
+
+# OS bestanden
+.DS_Store
+Thumbs.db
+
+# IDE instellingen
+.idea/
+*.vscode/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Cache / temp bestanden
+cache/
+tmp/
+
+/test.php
+vendor/
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# Database configuration
+Config/DBConfig.php
+
+# PHP
+*.cache
+
+test.php
+/composer.lock
+Logs/errors.log
+/Test/test.php

@@ -1,0 +1,243 @@
+/* Hoogcontrast */
+body.theme-hoog-contrast {
+    --kleur-oppervlak: #000000;
+    --kleur-oppervlak-secundair: #111111;
+    --kleur-oppervlak-hover: #3a3a3a;
+    --kleur-achtergrond: #000000;
+    --kleur-tekst: #ffffff;
+    --kleur-link: #ffffff;
+    --font-basis: "Arial", "Helvetica", sans-serif;
+    filter: grayscale(1) contrast(1.2);
+}
+
+body.theme-hoog-contrast .weergave-knop.actief {
+    border-color: #ffffff;
+    box-shadow: inset 0 0 0 1px #ffffff;
+}
+
+body.theme-hoog-contrast svg,
+body.theme-hoog-contrast .buttonNav svg {
+    fill: currentColor;
+    color: #ffffff;
+}
+
+/* Hoogcontrast-categorieen */
+body.theme-hoog-contrast .categorieen,
+body.theme-hoog-contrast .categorieen details,
+body.theme-hoog-contrast .categorieen li details ul li {
+    background-color: #000000;
+    border-color: #ffffff;
+}
+
+body.theme-hoog-contrast .categorieen h2,
+body.theme-hoog-contrast .categorieen li,
+body.theme-hoog-contrast .categorieen summary,
+body.theme-hoog-contrast .categorie-link,
+body.theme-hoog-contrast .categorie-link:hover {
+    color: #ffffff;
+}
+
+body.theme-hoog-contrast .categorieen summary,
+body.theme-hoog-contrast .categorie-link,
+body.theme-hoog-contrast .categorieen li details summary {
+    background-color: #000000;
+}
+
+body.theme-hoog-contrast .categorieen summary:hover,
+body.theme-hoog-contrast .categorieen li details summary:hover,
+body.theme-hoog-contrast .categorieen li:not(:has(details)):hover,
+body.theme-hoog-contrast .categorie-link:hover {
+    background-color: #1f1f1f;
+}
+
+body.theme-hoog-contrast .categorieen a.actief,
+body.theme-hoog-contrast .categorieen a.actief:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.theme-hoog-contrast .categorie-lijst .categorie-lijst {
+    border-left-color: #ffffff;
+}
+
+/* Artikelen */
+body.theme-hoog-contrast .artikel .btn {
+    background-color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-hoog-contrast .artikel .btn:hover {
+    background-color: var(--kleur-oppervlak-hover);
+}
+
+/* Contact / kaarten */
+body.theme-hoog-contrast .contact-card {
+    background-color: var(--kleur-oppervlak);
+    border-color: var(--kleur-oppervlak-secundair);
+    color: var(--kleur-tekst) !important;
+}
+
+/* Contact / kaarten */
+body.theme-hoog-contrast .contact-card label {
+    background-color: var(--kleur-oppervlak);
+    border-color: var(--kleur-oppervlak-secundair);
+    color: var(--kleur-tekst) !important;
+}
+
+body.theme-hoog-contrast .contact-card h2 {
+    background-color: var(--kleur-oppervlak);
+    border-color: var(--kleur-oppervlak-secundair);
+    color: var(--kleur-tekst) !important;
+}
+
+body.theme-hoog-contrast .contact-button {
+    background-color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-hoog-contrast .contact-button:hover {
+    background-color: var(--kleur-oppervlak-hover);
+}
+
+body.theme-hoog-contrast input[type="range"] {
+    accent-color: var(--kleur-oppervlak-secundair);
+    outline: none;
+    box-sizing: border-box;
+}
+
+body.theme-hoog-contrast footer {
+    color: var(--kleur-tekst);
+}
+
+body.theme-hoog-contrast footer a:hover {
+    text-decoration: underline;
+}
+
+body.theme-hoog-contrast .registreerHier {
+    color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-hoog-contrast .registreerHier:hover {
+    color: var(--kleur-oppervlak-hover);
+}
+
+body.theme-hoog-contrast .winkelmand-title {
+    color: var(--kleur-tekst);
+}
+
+body.theme-hoog-contrast .info-page {
+    background-color: var(--kleur-achtergrond);
+}
+
+body.theme-hoog-contrast .info-page__container {
+    background-color: var(--kleur-achtergrond);
+}
+
+body.theme-hoog-contrast .info-page h1 {
+    color: var(--kleur-tekst);
+}
+
+body.theme-hoog-contrast .info-page h2 {
+    color: var(--kleur-tekst);
+}
+
+body.theme-hoog-contrast .info-page h3 {
+    color: var(--kleur-tekst);
+}
+
+body.theme-hoog-contrast .info-page a {
+    color: var(--kleur-tekst);
+}
+
+body.theme-hoog-contrast .info-page .ingangsDatum {
+    color: var(--kleur-tekst);
+}
+
+body.theme-hoog-contrast .info-page p {
+    color: var(--kleur-tekst);
+}
+
+body.theme-hoog-contrast .info-page strong {
+    color: var(--kleur-tekst);
+}
+
+body.theme-hoog-contrast #zoekveld:focus {
+    box-shadow: 0 0 0 0.1rem var(--kleur-tekst);
+}
+
+body.theme-hoog-contrast .filtersHome label{
+    color: var(--kleur-tekst);
+}
+
+body.theme-hoog-contrast {
+    color: var(--kleur-tekst);
+}
+
+body.theme-hoog-contrast .text-sorteer{
+    color: white;
+}
+
+body.theme-hoog-contrast .aantal-label{
+    color: black;
+}
+
+body.theme-hoog-contrast #remember {
+    outline: 1px solid black;
+}
+
+body.theme-hoog-contrast button.btn-checkout {
+    background-color: var(--kleur-oppervlak-secundair);
+    color: white;
+}
+
+body.theme-hoog-contrast button.btn-checkout:hover {
+    background-color: var(--kleur-oppervlak-hover);
+    border-color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-hoog-contrast .checkoutLogin a {
+    color: black;
+}
+
+body.theme-hoog-contrast .bedanktBestelling {
+    color: white !important;
+}
+
+body.theme-hoog-contrast button.btn-checkout,
+a.btn-checkout {
+    background-color: var(--kleur-oppervlak-secundair);
+    color: white;
+}
+
+body.theme-hoog-contrast button.btn-checkout:hover,
+a.btn-checkout:hover {
+    background-color: var(--kleur-oppervlak-hover);
+    border-color: var(--kleur-oppervlak-secundair);
+}
+
+body.theme-hoog-contrast .wishlist-title {
+    color: white;
+}
+
+body.theme-hoog-contrast #reviews {
+    color: white;
+}
+
+body.theme-hoog-contrast #aantalHC {
+    color: black;
+}
+
+body.theme-hoog-contrast .bestellingen-container .table thead th {
+    color: black;
+}
+
+body.theme-hoog-contrast .MijnBes{
+    color: white;
+}
+
+body.theme-hoog-contrast .bestellingen-container h1 {
+    color: white;
+}
+
+body.theme-hoog-contrast .helphelphelp {
+    color: white;
+}
+

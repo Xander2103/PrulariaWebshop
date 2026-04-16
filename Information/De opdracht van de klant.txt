@@ -1,0 +1,27 @@
+﻿Opdracht van de klant
+
+
+De opdracht bestaat uit vier delen:
+* webshop voor de klanten gemaakt met PHP
+* administratieve website met C# voor de klantendienst aankoop
+* administratieve website voor C# voor klantendienst verkoop
+* administratieve website met java voor de logistieke dienst
+
+
+Het scrum team bestaat uit subgroepen volgens de opleiding van de deelnemers. Elke subgroep maakt een deel van de opdracht volgens het agile/scrum principe.
+
+
+De klant heeft voor elk onderdeel een aparte manager (technische instructeur)  als contactpersoon voor elk team aangeduid om meer duiding over de opdracht te geven. 
+
+
+Voor de opdracht wordt gebruik gemaakt van een bestaande centrale database en deze kan niet gewijzigd worden.
+
+
+Belangrijk:
+* Er kan aan de structuur van de database niets gewijzigd worden.
+* Gegevens kunnen door de verschillende onderdelen van de applicatie doorgegeven worden. 
+
+
+Een voorbeeld ter verduidelijking:
+Er zijn geen emmers meer in voorraad. Team Aankoop beheert het aanbod van artikels.
+Wanneer de artikelen geleverd worden, zal team Magazijn, deze leveringen verwerken en de artikelen in het magazijn plaatsen. Een klant bezoekt de online winkel, welke werd ontwikkeld door Team Webshop en bestelt een aantal emmers. Team Verkoop volgt de bestellingen op van de klanten van de webshop. Wanneer de betaling van bestelling is gebeurd, krijgt team Magazijn de opdracht om deze bestelling klaar te zetten voor verzending en de voorraad aan te passen.

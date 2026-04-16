@@ -1,0 +1,358 @@
+/* =========================
+   Home/product overzicht
+   Wishlist hartje
+   ========================= */
+
+.product-overzicht .artikel-kaart {
+    position: relative;
+}
+
+.product-overzicht .wishlist-form-overlay {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 50;
+    margin: 0;
+}
+
+.product-overzicht .wishlist-form-overlay > .wishlist-heart-button {
+    all: unset;
+    display: inline-block !important;
+    cursor: pointer !important;
+    color: #000000 !important;
+    font-size: 34px !important;
+    line-height: 1 !important;
+    font-weight: 700 !important;
+    border: none !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    transition: transform 0.15s ease, color 0.15s ease !important;
+}
+
+.product-overzicht .wishlist-form-overlay > .wishlist-heart-button.is-active {
+    color: #d62828 !important;
+}
+
+.product-overzicht .wishlist-form-overlay > .wishlist-heart-button:hover {
+    transform: scale(1.08) !important;
+}
+
+/* =========================
+   Wishlist pagina
+   ========================= */
+
+.wishlist-page {
+    padding: 2rem 1rem 3rem;
+}
+
+.wishlist-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.wishlist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.wishlist-title {
+    margin: 0;
+    color: #2F3E2E;
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.35rem;
+}
+
+.wishlist-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 72px;
+    height: 4px;
+    background-color: #89AC86;
+    border-radius: 999px;
+}
+
+.wishlist-header-actions {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.wishlist-share-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    min-width: 320px;
+}
+
+.wishlist-share-label {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #567453;
+}
+
+.wishlist-share-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.wishlist-share-input {
+    width: 320px;
+    max-width: 100%;
+    height: 44px;
+    padding: 0 0.9rem;
+    border: 1px solid #C9DDC8;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    color: #2F3E2E;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+}
+
+.wishlist-share-input:focus {
+    outline: none;
+    border-color: #89AC86;
+    box-shadow: 0 0 0 3px rgba(137, 172, 134, 0.15);
+}
+
+.wishlist-share-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #89AC86;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.15s ease;
+}
+
+.wishlist-share-button:hover {
+    background-color: #749571;
+}
+
+.wishlist-clear-form {
+    margin: 0;
+}
+
+.wishlist-clear-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    padding: 0 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #C94F4F;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.15s ease;
+}
+
+.wishlist-clear-button:hover {
+    background-color: #B64040;
+}
+
+.wishlist-overzicht {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.wishlist-kaart {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    background-color: #F7FBF6;
+    border: 1px solid #D5EBD4;
+    border-radius: 14px;
+    padding: 1rem;
+}
+
+.wishlist-kaart__afbeelding {
+    flex: 0 0 180px;
+    max-width: 180px;
+}
+
+.wishlist-kaart__afbeelding img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    display: block;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.wishlist-kaart__inhoud {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wishlist-kaart__titel {
+    margin: 0 0 0.5rem;
+    color: #1F2A1F;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.wishlist-kaart__categorie {
+    margin: 0 0 0.75rem;
+    color: #567453;
+    font-size: 0.95rem;
+}
+
+.wishlist-kaart__prijs {
+    margin: 0 0 0.75rem;
+    color: #1F2A1F;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.wishlist-kaart__prijs span {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.wishlist-kaart__voorraad {
+    margin: 0 0 1rem;
+}
+
+.wishlist-kaart__acties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.wishlist-detail-link,
+.wishlist-verwijder-knop,
+.wishlist-terug-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.wishlist-detail-link,
+.wishlist-terug-link {
+    background-color: #89AC86;
+    color: #FFFFFF;
+}
+
+.wishlist-verwijder-knop {
+    background-color: #C94F4F;
+    color: #FFFFFF;
+    border: none;
+}
+
+.wishlist-leeg {
+    background-color: #F7FBF6;
+    border: 1px solid #D5EBD4;
+    border-radius: 14px;
+    padding: 2rem;
+    text-align: center;
+    max-width: 520px;
+}
+
+.wishlist-leeg-tekst {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #2F3E2E;
+}
+
+.wishlist-verwijder-form {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .wishlist-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .wishlist-header-actions {
+        margin-left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .wishlist-share-box {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .wishlist-share-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .wishlist-share-input {
+        width: 100%;
+    }
+
+    .wishlist-share-button,
+    .wishlist-clear-button {
+        width: 100%;
+    }
+
+    .wishlist-kaart {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .wishlist-kaart__afbeelding {
+        flex: 0 0 auto;
+        max-width: 100%;
+    }
+
+    .wishlist-kaart__afbeelding img {
+        height: 220px;
+    }
+
+    .wishlist-kaart__titel {
+        font-size: 1.5rem;
+    }
+}
+
+#wishlistHover:hover {
+    background-color: #749571;
+}
+
+#wishlistDelete:hover {
+    background-color: #B64040;
+}

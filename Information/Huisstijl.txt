@@ -1,0 +1,22 @@
+﻿Het kleurenschema bestaan hoofdzakelijk uit 3 kleuren:
+* #ABD7A8 (zacht groen): achtergrondkleur voor banners en hoofdingen, tevens ook de hoofdkleur voor Prularia.
+* #FFFFFF (wit): witruimtes en achtergrondkleur voor pagina’s, alsook de tekstkleur voor de delen waar het zacht groen als achtergrondkleur is gebruikt
+* #000000 (zwart): tekstkleur op witte achtergronden
+
+
+Bijkomende kleuren zijn mogelijk, maar dit dienen zachte (niet felle) kleuren te zijn die gebruikt worden om kleine accenten te leggen. Deze dienen ook in het geheel te passen.
+
+
+
+
+Het logo (bovenaan deze pagina) is beschikbaar in het zwart en in het wit, afhankelijk van de plaats waar het gebruikt wordt. Beide logo’s hebben een transparante achtergrond.
+De logo’s kan je in de volgende map downloaden:
+
+
+
+logo_prularia_zwart.jpg
+logo_prularia_zwart.png
+
+
+logo_prularia_wit.jpg
+logo_prularia_wit.png

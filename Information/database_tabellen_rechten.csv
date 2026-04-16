@@ -1,0 +1,51 @@
+Tabelnaam,Omschrijving,PHP Rechten,NET Rechten,Java Rechten,Opmerkingen
+actiecodes,Actiecodes en promoties met geldigheidsperiode,SD,SIUD,S,Eenmalige actiecodes worden na gebruik verwijderd (10% korting)
+adressen,Adresgegevens (straat huisnummer postcode plaats),SIU,SIU,SIU,Adressen worden niet verwijderd maar inactief gezet (actief default = 1)
+artikelcategorieen,Koppeltabel tussen artikelen en categorieën,S,SIUD,S,Een artikel kan tot meerdere categorieën behoren
+artikelen,Productgegevens met prijzen voorraad en kenmerken,S,SIUD,SU,BTW 21%; Prijs zonder BTW; EAN wordt automatisch gegenereerd via trigger; UPDATE beperkt tot specifieke velden
+artikelleveranciersinfolijnen,Leveranciersinformatie per artikel,S,S,SIUD,Koppeling tussen artikelen en leveranciers
+bestellijnen,Orderregels met artikelen en aantallen,SIU,SU,S,Default aantalGeannuleerd = 0
+bestellingen,Klantbestellingen met betaling en leveringsinfo,SIU,SIU,SIU,Betaalcode wordt automatisch gegenereerd; actiecodeGebruikt geeft 10% korting; Status wordt via trigger aangepast
+bestellingsstatussen,Statussen van bestellingen in het proces,S,S,S,"Mogelijke waarden: Lopend Betaald Geannuleerd Klaarmaken Onderweg Geleverd Verloren Beschadigd Retour RetourInStock"
+betaalwijzes,Betaalmethoden voor bestellingen,S,S,S,Mogelijke waarden: Kredietkaart of Overschrijving
+categorieen,Productcategorieën in boomstructuur,S,SIUD,S,Categorieën hebben hiërarchische boomstructuur met subcategorieën
+chatgesprekken,Chatgesprekken gestart door klanten,SIUD,SIUD,Niet gespecificeerd,Een gesprek bevat meerdere chatgespreklijnen
+chatgespreklijnen,Individuele chatberichten in gesprekken,SIUD,SIUD,Niet gespecificeerd,Berichten binnen een chatgesprek
+contactpersonen,Contactpersonen van rechtspersonen,SIUD,SIUD,S,Een contactpersoon hoort bij één rechtspersoon en heeft een uniek gebruikersaccount
+eventwachtrijartikelen,Wachtrij voor artikel events en voorraadverwerking,Niet gespecificeerd,Niet gespecificeerd,Niet gespecificeerd,Wordt gebruikt door events voor voorraadaanvulling
+gebruikersaccounts,Gebruikersaccounts van klanten,SIUD,SIUD,S,Default disabled = 0; Wachtwoorden moeten geëncrypteerd zijn (GDPR)
+inkomendeleveringen,Inkomende leveringen van leveranciers,S,S,SIUD,Leveringen met leveringsbonnummer en ontvangstdatum
+inkomendeleveringslijnen,Regels van inkomende leveringen,S,S,SIUD,Artikelen met goedgekeurd en teruggestuurd aantal
+klanten,Klantgegevens (natuurlijke of rechtspersonen),SIUD,SIUD,S,Klant kan natuurlijke persoon of rechtspersoon zijn
+klantenreviews,Productbeoordelingen door klanten,SI,SD,Niet gespecificeerd,Reviews met score feedback en datum
+leveranciers,Leveranciers van artikelen,S,SIUD,SIUD,Leveranciersinformatie
+magazijnplaatsen,Magazijnlocaties voor artikelopslag,S,S,SIUD,"Rij A-Z rek 1-60; Alle stuks op één plaats horen bij één artikel; Een artikel kan verspreid liggen"
+natuurlijkepersonen,Natuurlijke personen (particulieren),SIUD,SIUD,S,Heeft een uniek gebruikersaccount; Voornaam en achternaam
+personeelsleden,Personeelsgegevens van medewerkers,S,SIUD,S,Elk personeelslid heeft een gebruikersaccount; Kan tot meerdere security groepen behoren; Default inDienst = 1
+personeelslidaccounts,Accounts van personeelsleden,SU,SIUD,SU,Paswoord is PersoneelVanPrularia
+personeelslidsecuritygroepen,Koppeltabel personeel en beveiligingsgroepen,S,SIUD,S,Meerdere security groepen per personeelslid mogelijk
+plaatsen,Postcodes en gemeenten,S,S,S,Geografische locaties
+rechtspersonen,Rechtspersonen (bedrijven),SIUD,SIUD,S,Heeft één of meerdere contactpersonen; Bedrijfsnaam en BTW-nummer
+securitygroepen,Beveiligingsgroepen en toegangsrollen,S,S,S,"Mogelijke waarden: PHPwebsite Cwebsite Javawebsite Adminwebsite"
+toonpersoneelsledenmetsecuritygroepen,View voor personeel met hun groepen,Niet gespecificeerd,Niet gespecificeerd,Niet gespecificeerd,Database view (geen directe rechten nodig)
+uitgaandeleveringen,Uitgaande leveringen naar klanten,S,S,SIUD,Trackingcode wordt automatisch gegenereerd via trigger; Status-update wijzigt bestellingsstatus via trigger
+uitgaandeleveringsstatussen,Statussen van uitgaande leveringen,S,S,S,"Mogelijke waarden: Onderweg Geleverd Verloren Beschadigd Retour RetourInStock"
+veelgesteldevragenartikels,FAQ's over specifieke artikelen,S,SIUD,S,Veelgestelde vragen gekoppeld aan artikelen
+wishlistitems,Verlanglijst items van gebruikers,SIUD,S,S,Favoriete producten per gebruiker
+
+RECHTEN LEGENDA:
+S = Select (lezen)
+I = Insert (toevoegen)
+U = Update (wijzigen)
+D = Delete (verwijderen)
+
+GEBRUIKERSACCOUNTS DATABASE:
+Subgroep,Gebruikersnaam,Paswoord
+PHP,PHPgebruiker,PaswoordPHPScrum2020
+.NET,Cgebruiker,PaswoordCsharpScrum2020
+Java,Javagebruiker,PaswoordJavaScrum2020
+
+BELANGRIJKE EVENTS (dagelijks):
+08:00 - Vervallen actiecodes verwijderen
+09:00 - Automatische voorraadaanvulling artikelen onder minimum
+10:00 - Uitgaande bestellingen status update (Onderweg → Geleverd)

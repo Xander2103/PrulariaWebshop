@@ -1,0 +1,308 @@
+﻿Gebruikersnamen en paswoorden voor de database
+
+
+Subgroep
+	Gebruikersnaam
+	Paswoord
+	PHP
+	PHPgebruiker
+	PaswoordPHPScrum2020
+	.NET
+	Cgebruiker
+	PaswoordCsharpScrum2020
+	Java
+	Javagebruiker
+	PaswoordJavaScrum2020
+	Inhoud
+De database is gevuld met data zodat elke groep aan de slag kan.
+Trigger
+Een trigger is een programma met SQL instructies. De trigger wordt gekoppeld aan een insert, update of delete instructie en een table. De trigger start als die actie gebeurt met de table.
+bv. elke artikel heeft een uniek ean nummer. 
+De waarde van het ean nummer wordt gegenereerd tijdens de toevoeging (insert) van een nieuw artikel in de table artikelen.
+Tables en rechten
+De mogelijke rechten zijn Select, Insert, Update en Delete.
+
+
+Naam
+	PHP
+	.NET
+	Java
+	Actiecodes
+
+
+Eenmalige actiecode verwijderen na gebruik.
+	SD
+	SIUD
+	S
+	Adressen
+
+
+adres wordt niet verwijderd maar wel inactief gezet.
+De defaultwaarde van actief is 1.
+	SIU
+	SIU
+	SIU
+	ArtikelCategorieen
+	S
+	SIUD
+	S
+	Artikelen
+
+
+* BTW percentage is 21%. Prijs is zonder BTW.
+* insert genereert automatisch de waarde van het veld ean. Dit gebeurt door een trigger.
+* UPDATE rechten enkel op de velden: naam, beschrijving, prijs, gewichtingram, bestelpeil, voorraad, minimumVoorraad, maximumVoorraad, levertijd, aantalBesteldLeverancier, maxAantalInMagazijnPlaats
+* een artikel kan tot meerdere categorieën horen
+
+
+Defaultwaarden
+
+
+bestelpeil
+	0
+	voorraad
+	0
+	minimumVoorraad
+	0
+	maximumVoorraad
+	0
+	levertijd
+	1
+	aantalBesteldLeverancier
+	0
+	maxAantalInMagazijnPlaats
+	0
+	
+
+	S
+	SIUD
+	SU
+	ArtikelLeveranciersInfoLijnen
+	S
+	S
+	SIUD
+	Bestellijnen
+
+
+De defaultwaarde van aantalGeannuleerd is 0.
+	SIU
+	SU
+	S
+	Bestellingen
+
+
+* de bestellingStatusId in de table Bestellingen wordt automatisch aangepast op basis van de uitgaandeLeveringsStatusId van de bijbehorende record van UitgaandeLeveringen. Dit gebeurt door een trigger.
+* insert genereert automatisch de betaalcode. Dit gebeurt door een trigger.
+* actiecodeGebruikt = true ⇒ 10% korting op de ganse bestelling
+Defaultwaarden
+
+
+betaald
+	0
+	annulatie
+	0
+	actiecodeGebruikt
+	0
+	
+
+	SIU
+	SIU
+	SIU
+	BestellingsStatussen
+
+
+Mogelijke waarden:
+Lopend, Betaald, Geannuleerd, Klaarmaken, Onderweg, Geleverd, Verloren, Beschadigd, Retour, RetourInStock
+	S
+	S
+	S
+	Betaalwijzes
+
+
+Kredietkaart of Overschrijving
+	S
+	S
+	S
+	Categorieen
+
+
+De categorieën hebben een boomstructuur
+Categorie 1
+Subcategorie 1.1
+Subcategorie 1.2
+Subcategorie 1.3
+Categorie 2
+Subcategorie 2.1
+Subcategorie 2.1.1
+Subcategorie 2.1.2
+Subcategorie 2.2
+	S
+	SIUD
+	S
+	Chatgesprekken
+
+
+* een klant start een chatgesprek. 
+* een gesprek bevat meerdere chatgespreklijnen.
+	SIUD
+	SIUD
+	
+
+	ChatgesprekLijnen
+	SIUD
+	SIUD
+	
+
+	Contactpersonen
+
+
+* een contactpersoon hoort bij één rechtspersoon
+* een contactpersoon heeft een uniek gebruikersaccount
+	SIUD
+	SIUD
+	S
+	Eventmessages
+
+
+hier komen alle logmessages van de events
+	
+
+	
+
+	
+
+	EventWachtrijArtikelen
+
+
+wordt gebruikt door één van de events. 
+	
+
+	
+
+	
+
+	GebruikersAccounts
+van klanten
+
+
+De defaultwaarde van disabled is 0.
+	SIUD
+	SIUD
+	S
+	InkomendeLeveringen
+	S
+	S
+	SIUD
+	InkomendeLeveringsLijnen
+	S
+	S
+	SIUD
+	Klanten
+
+
+klant kan een natuurlijke persoon (= fysieke persoon) zijn of een rechtspersoon (bv. bedrijf)
+	SIUD
+	SIUD
+	S
+	KlantenReviews
+	SI
+	SD
+	
+
+	Leveranciers
+	S
+	SIUD
+	SIUD
+	MagazijnPlaatsen
+
+
+Alle stuks op één magazijn plaats hoort bij één artikel.
+
+
+* een artikel kan verspreid liggen over het magazijn. Bv. 2 stuks in rij 2 rek 6 en 5 stuks in rij 9 rek 1
+* magazijn plaatsen: rij A → Z, rek 1 → 60
+* elke magazijn plaats is even groot.
+	S
+	S
+	SIUD
+	NatuurlijkePersonen
+
+
+heeft een uniek gebruikersaccount
+	SIUD
+	SIUD
+	S
+	Personeelsleden
+
+
+* elk personeelslid heeft een gebruikersaccount. 
+* een personeelslid kan tot meerdere security groepen behoren.
+
+
+De defaultwaarde van inDienst is 1.
+	S
+	SIUD
+	S
+	PersoneelslidAccounts
+
+
+Het paswoord is PersoneelVanPrularia
+	SU
+	SIUD
+	SU
+	PersoneelslidSecurityGroepen
+	S
+	SIUD
+	S
+	Plaatsen
+	S
+	S
+	S
+	Rechtspersonen
+
+
+een rechtspersoon heeft één of meerdere contactpersonen
+	SIUD
+	SIUD
+	S
+	SecurityGroepen
+
+
+Mogelijke waarden:
+PHPwebsite, Cwebsite, Javawebsite, Adminwebsite
+	S
+	S
+	S
+	UitgaandeLeveringen
+
+
+* de insert genereert automatisch de trackingcode. Dit gebeurt door een trigger.
+* een update van de uitgaandeLeveringsStatusId wijzigt automatisch de bestellingsStatusId van de bijbehorende bestelling. Dit gebeurt door een trigger.
+	S
+	S
+	SIUD
+	UitgaandeLeveringStatussen
+
+
+Mogelijke waarden:
+Onderweg, Geleverd, Verloren, Beschadigd, Retour, RetourInStock 
+	S
+	S
+	S
+	VeelgesteldeVragenArtikels
+	S
+	SIUD
+	S
+	WishlistItems
+	SIUD
+	S
+	S
+	Events
+Een event is een programma met SQL instructies. Een event wordt uitgevoerd volgens een opgegeven tijdschema (éénmalig op een bepaald tijdstip / dagelijks / wekelijks / ... ).
+Er zijn drie events met elk hun eigen taak.
+* Elke dag om 8 uur:
+De vervallen actiecodes worden verwijderd.
+* Elke dag om 9 uur:
+Artikelen waarvan de voorraad onder de minimumaantal komt automatisch aangevuld. De toegevoegde artikelen worden automatisch geplaatst in de table magazijnplaatsen.
+* Elke dag om 10 uur:
+De uitgaandeBestellingsStatusId van de vorige dag wordt verplaatst van Onderweg naar Geleverd.
