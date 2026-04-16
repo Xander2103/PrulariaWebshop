@@ -1,7 +1,7 @@
 🛒 Prularia Webshop
 
 A full-stack webshop built in PHP 8 using a clean MVC architecture, developed during a Scrum-based team project.
-This project focuses on structured backend logic, maintainable code, and a strong user experience.
+This project focuses on structured backend logic, maintainable code, a strong user experience, and accessibility.
 
 📸 Preview
 🏠 Product Overview
@@ -12,6 +12,7 @@ This project focuses on structured backend logic, maintainable code, and a stron
 📬 Contact Page
 🚀 Features
 🛍️ Product Experience
+
 Interactive product overview with filtering and search
 Dedicated product detail pages
 Dynamic pricing and stock indicators
@@ -19,13 +20,17 @@ Visual states:
 In stock
 Low stock
 Out of stock
+
 ❤️ Wishlist System
+
 Toggle-based wishlist (heart icon)
 Works for both authenticated and guest users (session-based)
 Shareable wishlist via URL
 Visual feedback using CSS states
 Clear/reset functionality
+
 🛒 Shopping Cart
+
 Add/remove products with quantity controls
 Quantity limited by available stock
 Automatic total price calculation
@@ -33,21 +38,30 @@ Discount system (10% via action code)
 Disabled checkout when invalid
 Live item counter in the header
 Clear cart functionality
+
 📦 Stock Management
+
 Prevents users from exceeding available stock
 Backend and frontend validation
 Dynamic UI updates based on stock levels
+
 💳 Checkout Flow
+
 Complete checkout process
 Order overview before confirmation
 Order confirmation page with reference
+
 🔐 Authentication
+
 Login and registration system
 Session-based user handling
 User-specific functionality
+
 📬 Contact Form
+
 Fully functional backend processing
 Structured using MVC (Controller + Service)
+
 🧠 Architecture
 
 Built using a strict MVC structure:
@@ -61,6 +75,17 @@ Views → HTML with minimal PHP
 ✔️ Clear separation of concerns
 ✔️ No HTML in backend logic
 ✔️ Secure database interaction
+
+♿ Accessibility Features
+
+This project includes several accessibility-focused features to improve usability for a wider audience:
+
+High contrast mode for better visibility
+Readable mode for improved text clarity
+Text-to-speech (read aloud) functionality
+Clear and structured layout for easier navigation
+
+These features were implemented to enhance inclusive design and overall user experience.
 
 🔄 Scrum Experience
 
